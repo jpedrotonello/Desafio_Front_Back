@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.min.css"></link>
+    </head>
+
+    <body>
+        <br>
+        <form id="submit-form" onsubmit="return false" class="ui form container column doubling stackable">
+            <h2> <span class="ui huge  text">Cadastro</span></h2>
+
+            <div class="field column">
+              <label>Primeiro nome</label>
+              <input type="text" name="first-name" id="first-name" placeholder="Primeiro nome">
+            </div>
+            <div class="field column">
+              <label>Último nome</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Último nome">
+            </div>
+            <div class="field column">
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+              </div>
+            <button class="ui button">Registrar</button>
+
+            <br>
+            
+            <h2> <span class="ui huge text">Soma dos códigos iguais</span></h2>
+
+            <table id="sumTable" class="ui fixed single line celled table">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Sobrenome</th>
+                  <th>Email</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="sumNome" name="sumNome"></td>
+                  <td id="sumSobreNome" name="sumSobreNome"></td>
+                  <td id="sumEmail" name="sumEmail"></td>
+                  <td id="sumTotal"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+            
+            <h2> <span class="ui huge text">Animal Cor Pais</span></h2>
+
+            <table id="sumTable" class="ui fixed single line celled table">
+              <thead>
+                <tr>
+                  <th>Animal</th>
+                  <th>Cor</th>
+                  <th>Pais</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="animal" name="animal"></td>
+                  <td id="cor" name="cor"></td>
+                  <td id="pais" name="pais"></td>
+                </tr>
+              </tbody>
+            </table>
+        </form>
+
+        
+        
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script href="node_modules/semantic/components/semantic.js"></script>
+        <script src="node_modules/semantic-ui-css/components/transition.js"></script>
+        <script src="node_modules/semantic-ui-css/semantic.min.js"></script>
+
+        <script src="src/main.js"></script>
+
+    </body>
+
+</html>
